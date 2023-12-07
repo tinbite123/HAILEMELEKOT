@@ -1,0 +1,965 @@
+Evangadi
+********
+
+  Usefull Links
+  *************
+  https://www.evangadi.com/courses/Chulo.jpg
+  https://www.w3schools.com/tags/ref_eventattributes.as
+
+  Conditional Statment
+  ********************
+
+    Defenition:
+      Conditional statment is a set of rules preformed if a certain condition is met.
+
+      1. The Evaluation
+        - This is where you analyze values in your script to determine whether or not they match expected results
+
+        Ex:
+          var a = 82;
+          (a <= 55) 
+          
+      2. The Decision
+        - Using the results of the evaluation, you decide which path to take
+        - This is always a True or False value in conditional statments
+
+        Ex: Evaluation
+          var a = 32;
+          (a <= 55)
+        Decision = True
+
+      3. The Statment
+        - What to do when conditions are fulfilled or nor fulfilled
+
+        Ex: 
+          console.log("RAISE YOUR HAND!");
+          console.log("You Faild");
+
+      
+      If Statment
+      ***********
+        Defenition: 
+          - An if statment is a programming conditional statment that, if provide TRUE, preforms a function or displays information.
+
+        Syntax
+        ******
+          - We start by using the key word "if"
+          - We put the condition
+
+  How to solve Problemes
+  **********************
+
+    1. Understand the probleme
+
+    2. Solve it on paper
+
+    3. Craft the general step that can be followed to solve any kind of similar propblem
+
+    4. Write the pseudo code
+      -  Identify the smallest stepst to follow and pick what JavaScript functionality you need to use cover that step
+
+    5. Translate to JavaScript
+
+    6. Test
+
+  JavaScript Events
+  *****************
+
+    Introduction to Events
+    **********************
+      
+      - Events in JavaScript are what happens on the browser when a user browses/manipulates a any website. 
+      Your job as a JavaScript developer is to write a script that responds to an event that happens on the browser.
+      This is what makes websites interactive.
+      
+      - Under this section, we will learn what JavaScript events mean, types of JavaScript events and what happens
+      when an event (mouse movement) fires in JavaScript (such as a keystroke or mouse movement).
+
+    What are JS events and JS event types?
+    **************************************
+      
+      - JavaScript events, definition:
+
+        - Change in the state of any object is known as event, i.e., event describes the change in the state of the source. HTML/browser events are "changes" that happen to HTML elements when a user or the browser manipulates the website. When the page loads, it is called an event. 
+        
+        When the user clicks a button, presses any key or closes/resizes a window, these too are events.
+
+        Your job as a JavaScript developer is to write a script that responds to an event that happens on the browser. This is what makes websites interactive. When one interacts with a web page (like clicking a button), that interaction is registered as an event on the browser. In response to that event, the
+      script that is bound with that event changes something on the web page.
+
+      - Event in JavaScript are also called HTML or browser events.
+
+      - How do these events (like clicking button or pressing arrow key) change the HTML elements?
+        
+        -  Developers, like yourselves, write JavaScript code that will execute/react in response to events. Meaning, you will write a JavaScript code that will run in response to a user’s button clicks. You can write a JavaScript code that will display “password needs to include special characters” when a user submits (onsubmit event) a form.
+
+      - Note: One key concept to understand in here is that you, as a web developer, will be
+      responsible to prepare the scripts in response to potential events that could happen on your
+      website.
+      9.3 Event types
+      • The browser triggers many events, and our JavaScript code reacts/gets executed in response to these events.
+      Below, please find some of the most common event types and event names:
+      ▪ UI/Window events: These events occur as the result of any interaction with the browser window
+      rather than the HTML page. The various UI events are as follows.
+      • In these events, we attach the event listener to the window object, not the document object
+      • Load event: The event fires when the browser finishes loading a page
+      • Unload event: This event fires when This event fires before the users leave the page,
+      probably because user requested a new page
+      • error event: This event fires when the browser encounters a JavaScript error or a value
+      that doesn’t exist
+      • resize event: This event occurs when a user changes/resizes the current size of the browser
+      window
+      • scroll event: This event fires when the user scrolls up/down on the browser window. It can
+      relate to the entire page or a specific element on the page.
+      ▪ Key board events: These events fire when a user interacts with a keyboard
+      • keydown event: This event fires when user first presses any key on the keyboard. Note: If
+      the user holds down the key, this event fires repeatedly.
+      • keyup event: This event fires when a user releases any key on the keyboard.
+      • keypress press event: Just like keydown event, this event fires when a user presses any
+      key on the keyboard. However, the pressing of key results in printing a character on the
+      screen. The keypress event will not fire for enter, tab or arrow keys as pressing them will
+      not result in printing characters on the screen, but the keydown event will fire if a user
+      presses these keys.
+      • Note: The keydown and keypress events fire before a character appears on the screen, the
+      keyup fires after it shows.
+      ▪ Mouse events: These events fire when the mouse moves, or the user clicks a button. All the
+      elements of the page support these events.
+      • Click event: This event fires when the user presses on and releases the primary mouse
+      button (usually the left button).
+      o Note 1: This event also fires if the user presses the “Enter” key on the keyboard
+      when an element has focus.
+      o Note 2: For touchscreen devises, a tap on the screen acts like a single left-click
+      o Note 3: We can add the above two events to any element, but it’s better to apply it
+      only on the items that are usually clicked (like button element)
+      • dbclick event: This event fires when user quickly presses and releases a button twice
+      o Note: For touchscreen devises, a double-tap on the screen acts like a double leftclick.
+      o Note 2: We can add the above two events to any element, but it’s better to apply it
+      only on the items that are usually clicked (like button element)
+      • mouseover event: It fires when the user moves the cursor, which was outside an element
+      before, inside the element, in short, when a user moves the mouse over an element.
+      • mouseout event: This event fires when the user moves the cursor, which was inside an
+      element before, outside the element, in short, when users move the mouse from an element
+      ▪ Form Events: These events are common while using forms on a webpage. We find the submit
+      event mostly in form of validation (Ex: if a user misses a required information or enters an incorrect
+      input, submit event fires to check the form values before the data is sent/submitted to the server).
+      • change event: This event occurs when the value of an element has been changed. Example,
+      the change event fires when the checked value in check box, or radio button changes
+      • submit event: This event fires when a user submits a form. The change occurs on the
+      <form> element when user submits a form using a button or a key.
+      • cut event: This event fires when a user cuts a content from any HTML element.
+      o Note: The cut event is mostly used on <input> elements with type="text"
+      o Note 2: Although the cut event is supported by all HTML elements, it is not
+      possible to cut the content of a <p> element, unless we add the “contenteditable”
+      attribute and give it a value of "true".
+      • paste event: This event fires when a user pastes content in an element
+      o Note 1: The paste event is mostly used on <input> elements with type="text"
+      o Note 2: Although the paste event is supported by all HTML elements, it is not
+      possible to cut the content of a <p> element, unless we add the “contenteditable”
+      attribute and give it a value of "true".
+      • copy event: This event happens when a user copies the content of an element (ex: copying
+      content from a form field)
+      o Tip: The copy event is mostly used on <input> elements with type="text".
+      • select event: This event fires when a user selects some text in an element.
+      o Note: The onselect event is mostly used on <input type="text"> or <textarea>
+      elements.
+      ▪ Focus and blur events: These events fire when the HTML elements you can interact with gain/
+      lose focus. They are most commonly used in forms and especially helpful when you want to do the
+      following tasks:
+      • The tips are usually shown in the elements other than the one the user is interacting with.
+      • To trigger form validation as a user moves from one control to the next without waiting to
+      submit the form.
+      • Here are some of the focus and blur events:
+      o Focus/focusin event: This event fires, when an element gains focus.
+      o Blur/focusout event: This event fires, when an element loses focus.
+      • Visit this website for list of all JavaScript events:
+      ▪ https://www.w3schools.com/tags/ref_eventattributes.asp
+      9.4 Event handling in HTML
+      • Events: We have said earlier those events are generated as result of user interaction with the HTML
+      elements on the browser (such as pressing keys or clicking a button).
+      • Event handling: is a mechanism that controls these events and decides what should happen when an event
+      happens.
+      • Event handlers/listeners:
+      ▪ An event handler is also known as an event listener. An event handler/listener is a specific script
+      (JavaScript code) that gets executed when a particular event (such as clicking of a button) happens
+      on an HTML element.
+      ▪ An event handler is a script/function that listens to the event and responds accordingly to the event.
+      ▪ Note 1: An event listener/handler is a function with a name if is we want to reuse it for various
+      events.
+      ▪ Note 2: An event listener/handler is an anonymous function if it is going to be used only once.
+      ▪ Note 3: An event can be handled by one or multiple event handlers. If an event has multiple event
+      handlers, all the event handlers will be executed when the event is fired. For example, if there are
+      multiple scripts that will be executed when a button is clicked, all the scripts/functions will be
+      executed when the button is clicked.
+      • Event binding: The event binding allows you to add an event handler (JavaScript function) for a specified
+      event so that your chosen JavaScript function will be executed when that event is triggered.
+      • What happens during event handling? When a user interacts with any HTML element on a web page,
+      there are three steps involved in triggering a script associated with an event:
+      ▪ 1. Selecting an element: The element is selected to bind it with the event handler (JavaScript
+      function) when an event occurs on it
+      ▪ 2. Binding an event: This is to identify the specific event that will trigger the event handler to
+      execute.
+      ▪ 3. Attach a script: This is to instruct the web browser which specific event handler to execute
+      when a specific event happens
+      • Note: The script that you want to bind with an event needs to be written first 
+      9.5 Ways to bind an event (HTML event handler attributes/inline event handlers)
+      • There are three ways to assign/bind event handlers to an event: HTML event handler attributes/inline
+      event handlers, traditional/DOM Level 0 event handlers and DOM Level 2 event handlers. We will discuss
+      the HTML event handlers attribute in this section and the other 2 will be discussed in the following sections.
+      • HTML event handlers attribute: HTML allows event handler attributes, with JavaScript code, to be added to HTML
+      elements. To handle events using this method, all you need to do is to use an HTML attribute with the name of the
+      event handler function.
+      ▪ Syntax: onclick="changeBackground()"
+      ▪ Example 1: Let’s try to show an alert text on browser that says, "button clicked!!" when a user
+      clicks on a button
+      • Our code in the JavaScript file:
+      function showClickedAlert() {
+      alert("button clicked!!");
+      }
+      • Attaching the event handler function when there is a click event on our <button>
+      element:
+      <button onclick="showClickedAlert()">Save</button>
+      ▪ Example 2: Let’s try to change the color of our button’s text to red when the <button> is clicked
+      • Our code in the JavaScript file:
+      function changeButtonColor() {
+      var myButton = document.getElementById("buttonId");
+      myButton.style.color = "red";
+      }
+      • Attaching the event handler function to when there is a click event on our <button>
+      element:
+      <button id="buttonId" onclick="changeButtonColor()">Change Color</button>
+      ▪ Note: This approach (using inline event handlers) is considered a bad practice for the following
+      reasons:
+      • The event handler code is mixed with the HTML code, which will make the code more
+      difficult to maintain, especially on a larger scale it can get quite messy. Look at this
+      example:
+      <button onclick="changeButtonColor()" ondblclick="showClickedAlert()"
+      onfocus="changeBackgroundColor()" >Change Color</button>
+      o Look how unclean it will be to have all these event handlers in our <button>
+      • The approach won’t allow us bind more than one event handler for an event. Meaning, if
+      we use the inline event handling approach, we cannot assign a text color changer function
+      and a background color changer function for a single <button> click event.
+      • In inline HTML event handling, the scope of the event handler functions cannot be
+      controlled. This approach requires the event to be global, meaning, the event handler
+      functions need to be globally accessible
+      • If the element is loaded fully before the JavaScript code, users can start interacting with
+      the element on the webpage which will cause an error. To use the above
+      showClickedAlert() function, if the HTML page is loaded fully and the JavaScript has not
+      been loaded, the showClickedAlert () function is undefined. Meaning, if a user clicks the
+      button at this moment, an error will occur.
+      • Priority order: If the same event, that had an event handler attribute within the HTML, is
+      assigned DOM level event handler in the external JavaScript file, the event handler
+      assigned in the HTML will be replaced by DOM level event handler. Let’s assume we have
+      an event handler attribute that changes the text color of a <button> to red when it is clicked.
+      We also have a DOM level event handler that changes the text color of the same <button>
+      to green when it is clicked.
+      var myButton = document.getElementById("buttonId");
+      //function changing button text to green
+      function changeTextToGreen() {
+      myButton.style.color = "green";
+      }
+      //function changing button text to red
+      function changeTextToGreen() {
+      myButton.style.color = "green";
+      }
+      // Attribute event handler (for the <button> click event)
+      <button id="buttonId" onclick="changeButtonColor()"
+      ondblclick="showClickedAlert()">Change Color</button>
+      // DOM level event handler (for the <button> click event)
+      myButton.onclick = changeTextToGreen;
+      o The <button> text color will change to green, not red, when clicked as the event
+      handler in the external JavaScript gets priority over the attribute handler
+      ▪ Here is a list of event attributes (inline event handlers) that can be added to HTML elements:
+      • https://www.w3schools.com/tags/ref_eventattributes.asp
+      9.6 Ways to bind an event (traditional DOM event handlers/ DOM Level 0 event handlers)
+      • Traditional DOM event handlers/ DOM Level 0 event handler: Each element has event handler
+      properties (or onevent properties) such as onclick, ondblclick or onfocus. Under this event handling
+      approach, you just need to set/assign the event handler property to a function (event handler function).
+      • Syntax:
+      ▪ element.onevent = functionName;
+      • Notice that the event name is preceded by "on"
+      • Steps involved under traditional DOM event handling:
+      ▪ First, select the element you want to bind an event with
+      ▪ Then bind the element with the event handler
+      ▪ Finally attach the event handler function on the event (onevent property)
+      • Example 1: Let’s try to change the text color of a <button> to red when a user clicks on the <button>
+      ▪ Method 1: It is fine to make the handler function a separate named function, like below:
+      • Selecting the <button> we want to bind the event (click) with
+      let myButton = document.getElementById("buttonId");
+      • Binding an event handler with the element selected using a named function
+      var changeToRed = function () {
+      myButton.style.color = "red";
+      };
+      • Attaching the event handler function with the event handler property (onclick)
+      myButton.onclick = changeToRed;
+      ▪ Method 2: We can use anonymous handler function like below
+      var myButton = document.getElementById("buttonId");
+      myButton.onclick = function () {
+      myButton.style.color = "red";
+      };
+      • Note:
+      ▪ Under traditional DOM event handling, we can only attach a single function to an event
+      ▪ Under traditional DOM event handling, the event handler can be replaced by assigning another
+      function to the same property.
+      9.7 Ways to bind an event (DOM level 2 event handlers/listeners)
+      • DOM level 2 event handlers/listeners: Under this event handling approach, we will add/remove the event
+      handler as a listener for an element using the addEventListener() method.
+      ▪ This is the most favored way of handling events as the approach allows adding (removing) of
+      multiple event handlers for a single event using the event listener methods.
+      • DOM Level 2 Event Handlers provide two main methods to register/deregister event listeners:
+      ▪ addEventListener(): registers an event handler
+      ▪ removeEventListener(): removes an event handler
+      • Syntax:
+      ▪ element.addEventListener(event, function)
+      ▪ element. removeEventListener(event, function)
+      • addEventListene(): This is the recommended mechanism for adding event handlers in web pages. Inside
+      the addEventListener() function, we specify two parameters: the name of the event and event handler
+      function we want to run in response to the event.
+      ▪ Example 1: Let’s change the text color of a <button> to red when <button> is clicked
+      var myButton = document.getElementById("buttonId");
+      myButton.addEventListener("click", function () {
+      myButton.style.color = "red";
+      });
+      ▪ Exmaple 2: We can use a named function to do the same thing as example 1 above
+      var myButton = document.getElementById("buttonId");
+      let changeToRed = function () {
+      myButton.style.color = "red";
+      };
+      myButton.addEventListener("click", changeToRed);
+      • removeEventListener (): The removeEventListener() removes an event listener that was added via the
+      addEventListener(). However, we need to pass the same parameters that were passed to the
+      addEventListener()
+      ▪ Exmaple: Let’s remove the above “addEventListener”.
+      var myButton = document.getElementById("buttonId");
+      let changeToRed = function () {
+      myButton.style.color = "red";
+      };
+      myButton.addEventListener("click", changeToRed);
+      myButton.removeEventListener("click", changeToRed);
+      • Adding multiple listeners for a single event: Through DOM Level 2 event model, it is possible for one
+      event to trigger multiple event handler functions. Meaning, a specific object (ex:
+      document.getElementById("elementId")), with a specific event ((ex: click or keypress) can be assigned
+      with any number of event-handler functions.
+      ▪ Let’s add different event handler functions and change the text color of button to red, change the
+      button’s background to yellow and alert a message that says, "button clicked!!!"
+      var myButton = document.getElementById("buttonId");
+      myButton.addEventListener("click", function () {
+      myButton.style.color = "red";
+      });
+      myButton.addEventListener("click", function () {
+      alert("button clicked!!!");
+      });
+      myButton.addEventListener("click", function () {
+      myButton.style.backgroundColor = "yellow";
+      });
+      9.8 Halting default behaviors
+      • There are scenarios where you want the default HTML behavior not to take effect on the browser. For
+      example, you don't want the submit button to submit the form when required filled are not filled out. Let’s
+      see the preventDefault() method and try to halt default HTML behaviors.
+      • The preventDefault() method: It tells the user agent that if the event does not get explicitly handled, its
+      default action should not be taken as it normally would be.
+      ▪ Syntax: event.preventDefault();
+      ▪ Example 1: A checkbox has a default behavior of toggling a checkbox (showing the check mark
+      and hiding the check mark) upon clicking the <input> element. Using preventDefault() method,
+      let’s prevent the checkbox toggling and instead change the background color of the HTML <body>
+      to yellow.
+      var myCheckbox = document.querySelector("#id-checkbox");
+      var myeventHandler = function (event) {
+      document.body.style.backgroundColor = "yellow";
+      event.preventDefault();
+      };
+      myCheckbox.addEventListener("click", myeventHandler);
+      ▪ Example 2: By default, the submit event fires when the user clicks a submit button (<button> or
+      <input type="submit">) or presses Enter while editing a field. Now let’s prevents the default action
+      of submitting the form.
+      • Here is your HTML code for your form
+      <form id="formID">
+      <button id="buttonId" type="submit">Submit here</button>
+      </form>
+      • Now let’s prevent the form from being submitted and change the <button>’s text to
+      “Form submission prevented” on submit event
+      var myForm = document.getElementById("formID");
+      var myButton = document.getElementById("buttonId");
+      function functionToPrevent(event) {
+      myButton.innerHTML = "Form submission prevented";
+      event.preventDefault();
+      }
+      myForm.addEventListener("submit", functionToPrevent);
+      9.9 Explaining how to approach the form validation exercise
+      o Please watch the class demo by pausing and coding along
+
+
+
+
+          Attribute       Value	   Description
+          *********       *****     ***********
+
+          onafterprint	  script	Script to be run after the document is printed
+          onbeforeprint	  script	Script to be run before the document is printed
+          onbeforeunload	script	Script to be run when the document is about to be unloaded
+          onerror  - script	Script to be run when an error occurs
+          onhashchange  -  script	Script to be run when there has been changes to the anchor part of the a URL
+          onload  -  script	- Fires after the page is finished loading
+          onmessage	 -  script	  Script to be run when the message is triggered
+          onoffline	 -  script	- Script to be run when the browser starts to work offline
+          ononline - script -	   Script to be run when the browser starts to work online
+          onpagehide  -  script -	Script to be run when a user navigates away from a page
+          onpageshow  -  script -	Script to be run when a user navigates to a page
+          onpopstate  -  script -	Script to be run when the window's history changes
+          onresize  -  script -	Fires when the browser window is resized
+          onstorage  -  script -	Script to be run when a Web Storage area is updated
+          onunload  -  script -	Fires once a page has unloaded (or the browser window has been closed)
+
+
+          These are The different Event types:
+          ***********************************
+
+            Any of these events can be used to trigger a function in your JavaScript code
+
+            UI/Window Events-load,unload,error,resize,scroll
+            
+            Keyboard Events- keydown,keyup
+            
+            Mouse Events-click,dblclick,mouseover,mouseout
+            
+            Form Events- focus / focusin, blur/focusout, change,submit,cut,paste,copy,select
+
+  JavaScript jQuery
+  *****************
+
+      What is jQuery and why do we need it
+      **************************************
+
+        - jQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto - Write less, do more.
+        
+        - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
+        
+        - jQuery is a JavaScript toolkit designed to simplify various tasks by writing less code.
+     
+      
+      Do you understand what we can do with jQuery?
+      *********************************************
+
+      - Following is the list of important core features supported by jQuery:
+              
+        - DOM manipulation − The jQuery made it easy to select DOM elements, traverse them and modify their content by using a cross-browser open source selector engine called Sizzle.
+
+        - Event handling − The jQuery offers an elegant way to capture a wide variety of events, such as a user clicking on a link, without the need to clutter the HTML code itself with event handlers.
+        
+        - AJAX Support − The jQuery helps you a lot to develop a responsive and feature-rich site using AJAX technology.
+        
+        - Animations − The jQuery comes with plenty of built-in animation effects which you can use in your websites.
+        
+        - Lightweight − The jQuery is a very lightweight library - about 19KB in size ( Minified and gzipped ).
+        
+        - Cross Browser Support − The jQuery has cross-browser support, and works well in IE 6.0+, FF 2.0+, Safari 3.0+, Chrome and Opera 9.0+.
+        
+        - Latest Technology − The jQuery supports CSS3 selectors and basic XPath syntax.
+
+  Introduction to terminal, Bash Script and Git
+  *********************************************
+
+
+        Bash script: Mac terminal, Git Bash and Cygwin
+        **********************************************
+
+        What is Bash?
+        *************
+      
+         It is better to define terminal, GUI and shell before jumping into Bash
+
+               Graphical User Interfaces (GUI): A GUI is a way to command/instruct your
+              computer operating system (OS) using graphical symbols rather. A GUI uses
+              windows, icons, and menus to carry out commands, such as opening, deleting, and
+              moving files. Although a GUI operating system is primarily navigated using a
+              mouse, a keyboard can also be used.
+              § Terminal: GUIs, allow a user to accomplish daily tasks by easily interacting with
+              windows and icons. However, there are commands that need to be manually
+              entered via texts to instruct the computer directly. We usually do this through
+              terminals. Terminals, also known as command lines or consoles the “black” screen
+              programmers use to send text commands to do things like navigate through a folder
+              or copy a file and do more complex tasks.
+              § Shell: When you type commands on your terminal, what you’ve typed must be
+              understood before the computer executes the task. Shell is the software that
+              interprets the commands typed on terminal so that your computer understands them
+              and return a response to your command. There are different shells
+              (programs/CLI/script) that we can use to manipulate our OS. Example: Bash (for
+              Mac and Linus OS), Command Prompt (CMD) or PowerShell. We will focus on
+              Bash in our course.
+              § Bash: It is an acronym for Bourne Again SHell which is a command-line interface
+              (CLI) and is currently the most widely used shell.
+              • Bash is a type of shell (CLI) that we can use to communicate/instruct our
+              OS. Meaning, we use Bash when we want to control our OS without
+              having to navigate menus, options, and windows within a GUI
+              • Whatever we can do with our mouse to communicate with our OS, we can
+              do it with from our terminal by running Bash commands without the need
+              to use our mouse to navigate through our computer
+              • Why are we learning Bash and Bash script for this course?
+              § As web developers you should learn one of the shell scripts, be it Bash, Command
+              Prompt or PowerShell for the following reasons:
+              • Great control over your operating system: There are commands that
+              you can’t use with your mouse and keyboard, but you can achieve these
+              commands only via shell.
+              o Example: changing permissions on a certain file, listing all files
+              including the hidden files, server administration for a local server
+              setup like Apache/MySQL and most importantly running multiple
+              commands at once (command to change your directory/folder and
+              then listing files in that folder)
+              • The piping feature on bash is what makes it super special: The Pipe (|)
+              is a command that lets you use two or more commands at once such that
+              the output from command serves as an input to the next.
+              o Example: cd classFolder | ls -lt | head
+              § cd changes the direcrory/folder
+              § ls -lt, lists all files/folders in that directory in order of time
+              created.
+              § head command prints the first 10 lines of the specified
+              files.
+              § So, in the above example, we are saying “please change
+              to the classFolder, list all files and folders in classFolder
+              and from the listed files and folders, only show me 10 of
+              them” in one command line
+              • There are web developer tools which operate through shell only: There
+              are software/application can’t be download and installed in your computer.
+              Thus, understanding shell commands will be very helpful in such cases
+              o Example: A package from Node Package Manager (NPM) can’t
+              be downloaded and installed using your mouse. You will need to
+              install every package manually using npm commands on your
+              terminal window. In addition, you will need to use npm 
+              commands to update (all packages at once or one by one), build
+              or know the versions of your packages,
+              • Better utilization of the Git Version Control tool: You will need your
+              shell command experiences to use the Git commands as well. There is a
+              desktop application created to make Git use easier. However, there are a
+              lot of Git functionalities that still require the use of Git commands from
+              your terminal.
+              • For local backend development: The front-end languages live in the
+              browser, so there are no extra installations required. However, any
+              backend programming language can run on your server and there is no one
+              language that lives in your server. Therefore, you need to install the
+              backend language you want on your computer in order to get them
+              running. Therefore, a backend developer (regardless of the language) will
+              need to know a shell script during framework installation process or while
+              setting up your computer’s environment. In your case, you will need a
+              shell scripting knowledge for setting up your own local server on Node.js
+              o Example: initiating your local Node.js server, keeping your server
+              running (with the nodemon command), installing
+              modules/packages
+              • What do we need to write Bash script?
+              § You need to have a terminal to write bash script on.
+              § If you have a Mac computer, you can use the default built-in terminal on your Mac.
+              § For Windows computers, you can applications such as GitBash and Cygwin.
+              • Git Bash comes included as part of the Git for Windows package.
+              • If you have not downloaded and installed Git, please download and install
+              Git for Windows here, just like other Windows applications.
+              • Once download completes, go to your downloads folder and find the
+              included .exe file and open to execute Git Bash
+              1.3 The main Bash commands you must know
+              • Directory: when we discuss Bash commands, we will use the term “directory” more often.
+              Please know that directory is another name for folder.
+              § pwd: It prints full path of your current/working directory
+              § cd: It will change the directory you are currently in so that you can manipulate the
+              different files and directories in your system. It is basically going to a different
+              folder and double clicking it
+              § ls: Lists contents of the current directory, whether files or folders. It’s the same as
+              you opening a folder in file explorer to see its contents
+              § mkdir: Makes/creates a new. It is the same as you right clicking and creating a
+              folder
+              § touch: This is going to be the easiest way to create a new file in a current
+              directory. It is the same as right clicking on a folder and creating a new file
+              § echo:
+              • Using echo without option: It prints text to the terminal window.
+              Example: echo “hello world” prints “hello world” on terminal
+              • Using echo with fie name only: It creates a file. Example: echo >
+              style.css creates the style.css file
+              • Using echo with text and file name: creates the file and writes the text
+              in the file. Example: echo "Hello" > index.html, creates an index.html
+              file and types “Hello” on the file
+              § mv: It moves or renames directory.
+              • Example: mv style.css CSS. This command will move the style.css file
+              found in your current directory to the CSS folder
+              • Example: mv style.css custom.css. This comand will rename the file
+              style.css to custom.css It is the same as right clicking on style.css to
+              rename it
+              § rm and rmdir: Both remove directories. However, rmdir will only delete empty
+              directories, whereas rm will remove directories and files regardless if they
+              contain data or not.
+              • Example: rm -r CSS will removes the CSS folder (this folder will not be
+              removed by rm unless it has files or folders in it)
+              • Example: rmdir CSS will remove the CSS folder, whether it has files or
+              folders in it. This is basically right clicking on a folder/file and deleting it
+              § grep: It searches for a string in groups of files from current directory
+              • Example: grep Sam my.txt your.txt : This command is basically saying
+              search for “Sam” string in my.txt and your.txt files found under your
+              current directory
+              § chmod: This command is used to change the permissions of a file in a directory.
+              • File/folder owners: Each file is associated with an owner and a group
+              and assigned with permission access rights for three different classes of
+              users:
+              o The file owner
+              o The group owners/members
+              o Other users (everybody else)
+              • File/folder permission: There are three file permission types that apply
+              to each class of users above
+              o The read permission
+              o The write permission
+              o The execute/running program permission
+              o Interpreting file permission listing: Example: rwxrwxrwx This
+              is interpreted to mean that
+              § The first set of rwx is for the owner: File owner has
+              permission to read, write and execute
+              § The second set of rwx is for the group owner of the
+              file: The group also has permission to read, write and
+              execute
+              § The third set of rwx is for all other users of the file:
+              All other users also has permission to read, write and
+              execute
+              o Changing file access permissions: File access permissions can
+              be changed by a numerical (octal) chmod specification
+              § ( r ) read permission is given the value 4
+              § ( w ) write permission is given the value 2
+              § ( e ) execute permission is given the value 1
+              § ( - ) indicates the file is a regular file/ not executable file
+              o The above values are added together for any one user
+              category:
+              § 0 means no permissions at all
+              § 1 means there is permission to execute only
+              § 2 means there is permission to write only
+              § 3 means there is permission to write and execute (1+2)
+              § 4 means there is permission to read only
+              § 5 means there is permission to read and execute (4+1)
+              § 6 means there is permission to read and write (4+2)
+              § 7 means there is permission to read and write and execute
+              (4+2+1). 7 means there is no restrictions on permissions.
+              Anybody may do anything, generally, not a desirable
+              setting
+              o File permission to 664: This means rw-rw-r--
+              § The first 6: File owner has permission to read and write
+              (4 + 2 + 0)
+              § The second 6: The group owners of the file also have the
+              permission to read and write (4 + 2 + 0)
+              § The third 4: All other users have permission to read only
+              (4+ 0 + 0)
+              o Command to view file permission: ls -l filename.txt
+              o Command to change file permission:
+              § Example: chmod 660 my.txt
+              § exit: The exit command will close a terminal window/ends the session. You can
+              just type the “exit” command while you are on your current directory
+              § crtl + C: If you don’t want to close your terminal, but want to stop a running
+              command, just use the “Ctrl + C” using your keyboard
+              § Please refer to this link for the list of further commands bash commands
+              • https://www.educative.io/blog/bash-shell-command-cheat-sheet
+              1.4 Introduction to Git: what is Git?
+              • What is Git?
+              § Git is a Version Control System. There are multiple Version Control Systems, but
+              Git is by far and large the most popular.
+              § In simple terms, Git is a software that tracks the changes you make to files, to be
+              specific, it tracks the changes you make in your code. By tracking it is meant that
+              Git will record every change you make in a file and saves the different versions of
+              the file. If you want to look at a specific version of your file, you can go back and
+              see that version.
+              § Git’s tracking of file changes is important when a project is done in collaboration
+              with others by allowing changes made by different people to be merged into one
+              document.
+              • The. git directory and how does Git track changes?
+              § The .git directory: This the directory/folder where Git stores the information about
+              your project. Without the .git directory, your project is a local project and not a Git
+              project. Meaning, you cannot perform any git commands and the project remains
+              untracked for any changes. The .git directory does the following:
+              • Remote information (to which remote server your project is connected)
+              • History of all local commits
+              • Branch information (on which branch is your current project state (HEAD)
+              pointing to)
+              • All logs of all local commits you have ever made (including revert
+              changes)
+              § Where does the. git directory come from?
+              • In case of new projects, this directory is created when you open your new
+              project folder in terminal and type the command “git init”
+              • If it is an existing project, this directory is created when you bring a copy
+              of a repository into your local computer through the command “git clone”.
+              • Ways to use Git: Git can be accessed via terminal commands or desktop app (GitHub
+              Desktop)
+              1.5 Why do we use Git and GitHub? How do we create a repository on GitHub?
+              • Why use Git in website/application development process?
+              § As stated above, Git is useful to anyone who writes code and tracks changes made
+              to a file. Git simplifies the process of working with other people. Having a
+              centrally located place (remote place such as GitHub) where you can upload your
+              changes and download changes from other members of your team, enable you to
+              collaborate more easily with other developers.
+              § If different people are working on the same file, Git can automatically merge the
+              changes from each contributor, without losing everyone's work.
+              § Diffing: makes git supper powerful and efficient
+              • Diff (or short for difference): Diff in computation world allows
+              programmers to look at 2 files side by side and see what differentiates them
+              by spotting the place where a new line of code had been added.
+              • Diffing is used mostly when comparing two different versions of the same
+              file/code, meaning comparing an older with the newer version.
+              • Diffing is used in Git to specifically show what has changed between two
+              versions of the same file/code/commits/branches
+              • What is GitHub?
+              § Git is software that runs locally. Your files and their history are stored on your
+              computer. However, if you want to work on a project together with others from
+              anywhere, you will need to store a copy of your files in a clude/remote place. That
+              is when GitHub comes in handy.
+              § GitHub is a website/online host where you can remotely store your git
+              project/repositories so that they are accessible from anywhere in the world for
+              anyone working on the project. It offers the distributed version control and source
+              code management functionality of Git, plus its own features
+              1.6 Git workflow: cloning, editing, committing and pushing
+              • Git workflow: It is a guideline for how to use Git in a team project to ensure the team is
+              on the same page. Even if there is no fixed standard way of interacting with Git, however,
+              a software team must at least know where to begin when implementing Git in the
+              workplace. No matter what, the team’s size and culture are always considered when
+              planning a Git workflow.
+              • Git repository/repo: It is a virtual location on GitHub where a user can store code, and a
+              collection of files of various versions of a Project. Repository is nothing but a folder where
+              files and other folders are saved remotely in cloud services like GitHub.
+              • What happens in Git workflow?
+              § Creating a repository: Someone needs to create the central repository on GitHub
+              if the project is a brand-new project. Here are the steps to create a new repository
+              on GitHub:
+              • Account with GitHub required: You need to have a GitHub account to
+              create a remote/central repository on GitHub.
+              o If you do not have a GitHub account already, click the link below
+              to sign up. Note: You will need an email address to sign up
+              § https://github.com/
+              o Once you sign up with GitHub, log into your GitHub account
+              o In the upper-right corner in your GitHub account, you will see the
+              “new” button. Click that button to start creating your repo
+              o Type a short, memorable name for your repository
+              o If you want, add a description of your repository
+              o Select the option to initialize the repository with a README file
+              § Why README.md file? This file tells other people why
+              your project is useful, how they can get started using it
+              and what they can do with your project
+              § Cloning: If it is not a brand-new project and there exists a Git repository already,
+              each developer needs to create a local copy of the existing repository, a process
+              called cloning. Here is the command you use to clone a remote repository:
+              • Go to any folder of your choice on your computer where you want to store
+              the remote repository and open your terminal
+              • Type: git clone <URL address of the central repo>
+              o You can find the address of the central repo by going to your
+              GitHub first and opening the repository. Click on “Code” green
+              button and either copy the HTTPS or SSH URL
+              § Committing: After cloning the project locally, each developer can make changes
+              to the files and then commit. Committing is basically saving the changes the
+              developer made to the local repository.
+              • Type: git commit –m “_______” (where you fill in the space with a
+              comment)
+              § Pulling: After committing changes locally, if you just push changes to the remote
+              repository, it is possible that another developer had already pushed updates that
+              contain code that conflicts with yours. Git will notify the conflict between your
+              version and the other developer’s version. Before publishing your updated version,
+              you need to download the current version of the central repository by the process
+              called, “git pull”. Pulling the current version of the remote repository will allow
+              you to add your updated version on top of what everyone else has already done.
+              • Type: git pull
+              • Merging conflicts: Without pulling the current repository to your local
+              computer, if you push your updated version to the central repository and
+              if the version you have is different from that of the current version of the
+              central repository, Git will refuse to push your changes to the central
+              repository. This is done to avoid the overwriting of other official commits.
+              In such cases, Git will give you a chance to manually resolve the conflict
+              between your updated version and that of the central repository, with a
+              process called merge conflict.
+              • Note: Merging conflicts manually is not advisable. Rather, it is highly
+              advisable that developers pull the current version of the repository from
+              GitHub before pushing their updated version to the central repository.
+              § Pushing: Once the local repository has the new changes committed, these
+              changes will need to be uploaded/pushed to the remote/central repository to share
+              with other developers on the project.
+              • Type: git push
+              § Branching: Branching in Git allows you to separate your work into different
+              branches so you can work freely on your source code without affecting anyone
+              else’s work or the actual code in the main branch.
+              • Main/master branch: This is basically the first branch created when you
+              clone and save a repository in your local computer.
+              • Other branches: Git allows you to create branches in addition to the main
+              branch. To create other branches, you can either create them from the
+              main branch or from the central remote repository.
+              o Why other branches? Let’s see this real-life scenario. Let’s
+              assume you and your co-worker are working on the same project
+              but you both are working on different features. It is best if there is
+              one main branch then two other branches for each of you to work.
+              When you both finish working on your features, these feature
+              branches can be merged into the main/master branch and accepted
+              into the main central repository.
+              • Creating a new branch:
+              o Type: git branch <branchName>
+              • List all of the branches in your repository:
+              o Type: git branch
+              • Delete a specified branch:
+              o Type: git branch -D < branchName >
+              • Rename the current branch to “newBrahchName”:
+              o Type: git branch -m < newBrahchNam >
+              1.7 Git workflow: forking, sending pull requests and merging
+              • Forking: A fork is a copy of a repository. Forking is basically copying any public
+              repository from GitHub of someone to your GitHub (it is copying from remote repo to
+              another remote repo).
+              • Why forking: Forking a repository allows you to freely make changes without affecting
+              the original project. Usually, people want to fork a publicly available repository because
+              they want to contribute to someone else’s project or want to use someone’s project as the
+              starting point for their own.
+              • What happens after forking? Forking without the need to make changes to the forked
+              repository is useless. The very reason of forking someone’s project is because you want to 
+              contribute to the project my making changes. Once you forked someone’s repo, it will be
+              saved in your GitHub. In order to make changes to the repo, you will need to:
+              § Clone: You will need to clone it and make it available in your local computer so
+              that you make changes
+              § Commit: Make changes and commit the changes
+              § Push: Push the changes. Note: pushing the changes here means, the changes will
+              be pushed to the remote forked copy found in YOUR GitHub. It will not be pushed
+              to the original git repo. If you want to send the changes you made to the original
+              repo owner, you will need to send a pull request.
+              • Sending pull request: This is to tell the owner of the project that you wish to publish the
+              changes you made into their repo. Steps to send a pull request:
+              § Go to your GitHub and then to the forked project. You will see the change you just
+              committed
+              § Click on “pull request” and then click on “new pull request”
+              § You will see a pull request opened with a box to write a comment/note to state
+              what changes you made. Write your note and create a pull request
+              • Merging a pull request: Once you send a pull request to propose that changes you've made
+              on your branch, the owner of the repo needs to accept your pull request in order for the
+              changes to be added to the original repo. If the owner is happy with the changes, she/he
+              will click “Merge Pull request”. By default, any pull request can be merged at any time,
+              unless the head branch conflicts with the base branch
+              • How can you transfer files between your local development environment/your
+              computer and the remote central repository? To do that, you can use the following 3
+              ways:
+              § 1. GitHub desktop software:
+              • You can download and use the desktop App from the link below:
+              o https://desktop.github.com/
+              • Here is a very short but helpful tutorial for GitHub desktop:
+              o https://www.youtube.com/watch?v=ci3W1T88mzw
+              § 2. Git commands from VSC terminal:
+              • The easiest option would be to use Git on VSC terminal. To be able to do
+              that, read this document and add the add GitHub Pull Requests and Issues
+              extension on your VSC
+              o https://code.visualstudio.com/docs/editor/github 
+              • Here is a short video on how to use Git from your VSC terminal
+              o https://youtu.be/Fk12ELJ9Bww
+              § 3. Git commands from your computer’s terminal/command line interface:
+              • Step 1: Download and install GIT and Git Bash
+              o For Windows computers: The other option would be to install
+              Git Bash because the Git command line interface/terminal comes
+              with it. Git Bash comes included as part of the Git for Windows
+              package. If you have not already downloaded Git, click the below
+              link to download and install Git for Windows like other Windows
+              applications.Then, find the included .exe file from your download
+              folder and open to execute Git Bash.
+              § https://gitforwindows.org/
+              § To check if Git is installed on your computer, run this
+              command on your terminal
+              • git --version
+              o For Mac computers: The default terminal (or zsh) comes with
+              Git pre-installed on it, so no need to install Git Bash
+              • Step 2: Track your project with Git:
+              o Go to one of your folders in your computer that you want to track
+              with git, open it with your terminal and initialize the git version
+              controlling system:
+              § Command: “git init”
+              § This command will create the .git folder in the directory
+              so that Git saves any of your changes in this folder
+              o However, you want to work on a repository that already exists,
+              just bring a copy of the remote repository into your computer:
+              § Command: “git clone urlOfTheCentralRepo”
+              • Step 3: Configure your identity on the repository: This is basically
+              setting your Git username for every repository on your computer
+              o command:
+              § git config --global user.name 'Sara Ali'
+              o To Confirm that you have set the Git username correctly: 
+              § Command: “git config user.name”, it will print 'Sara Ali'
+              • Step 4: Add the files you want to track to the staging area: Staging tells
+              Git that you want to include the updates you made in your next commit.
+              However, your changes are not actually recorded until you run “git
+              commit”
+              o command: git add [file-name] or git add .
+              o To check what is added to the staging area use the status:
+              § command: git status
+              o If you want to remove a file you just added to the staging area:
+              § Command: git rm --cached [file-name]
+              § the --cached keyword removes the files from staging area,
+              but the file will be removed from the index tracking your
+              Git project, not from your local repository.
+              • Step 5: Commit your change to the Git repository
+              o Command: git commit -m "A note to help you remember the
+              changes you made"
+              o Note: You must explicitly tell Git which changes you want to
+              include in a commit (by adding these changes to the staging area)
+              before running the "git commit" command. This is because the
+              "git commit" command will add only the changes that are added
+              to the staging area
+              o Note: Using the "git commit" command only save the change you
+              made in your local Git repository
+              • Step 6: Using .gitignore file to identify files you don't want to be
+              tracked by Git: If there are files and folders you do not want Git to track,
+              make sure to add them into your .gitignore file. These files inclide a file
+              is not used by anyone else in your team (like your to-do list file), files with
+              API keys/secrets, credentials, or sensitive information and dependencies
+              which can be downloaded from a package manage How?
+              o Creating a local .gitignore file in your repository: All you need
+              to do for this is, create a text file and name it .gitignore (remember
+              to include the dot at the beginning). You can mannually create this
+              file or create it from terminal using “touch .gitignore”
+              o Adding files/folders to the .gitignore file: to and add all the files
+              you want to be ignored in your .gitignore
+              § Ignoring a file: just type name of the file to ignore in the
+              .gitignore file. Example: todo.txt
+              § Ignoring a folder/directory: To ignore entire directories,
+              just by including their paths and putting a forward slash (
+              / ) at the end. Example: node_modules/
+              § Ignoring in group using Wildcard (*):
+              • Example: *.log ignores any file ending with the
+              .log extension
+              § Negation (!): Putting negation before the file name
+              negates a file that would be ignored otherwise
+              • Example: !example.log, this means that
+              example.log is not ignored, even though all other
+              files ending with .log are ignored already
+              § Comments: Any lines that start with # are comments.
+              Example: # macOS Files
+              o Note: Once you added a file/folder in your .gitignore file, all your
+              Git repositories will ignore the files and folders listed in the
+              .gitignore file.
+              • Step 7: Create a remote repository on GitHub: How to create a
+              repository from GitHub is discussed above. Follow those steps and create
+              a repository
+              • Step 8: Add the remote repo location to our local git folder: This is to
+              tell Git that we need a remote repo to push whatever we do with our local
+              folder.
+              o For that, you will need the address/URL of your GitHub
+              repository. To get this address, just
+              § Open the repository you just created on GitHub, and click
+              on “code” button on green and either use the HTTPS or
+              SSH address of the remote repo
+              o Now tell git that you want to add the remote repo location to push
+              your local changes to:
+              § Command: git remote add origin
+              https://github.com/yourgithubusername/repoName.git
+              o To check if remote repo is added successfully:
+              § Command: git remote
+              • Step 9: Push whatever files and changes you made locally to the remote
+              Git repo
+              o Command: git push -u origin master
+              § If this is your first time pushing a local change to the
+              central repo, you will be asked to provide your GitHub
+              credentials
+              o Now, go to your GitHub and open your remote repo. You will see
+              the commit you made
+              • How to use an existing central/remote repo?
+              § Step 1: Clone/copy the remote repo: Command: git clone <remoteRepoURL>
+              § Step 2: Make changes to the copy of the repo locally
+              § Step 3: Add all changes to staging area: Command: git add –A
+              § Step 4: Commit the changes: Command: git commit –m “Type message”
+              § Step 5: Pull the current version of the central repo: Command: git pull
+              • It is possible that another developer had already pushed updates that
+              contain code that conflicts with yours. To incorporate changes made by
+              other developers, before you push your changes to the remote repoyou,
+              you will ALWAYS need to first import their changes to your local
+              directory by git pull command
+              § Step 6: Publish your changes to the remote repo: Command: git push
+              • For essential Git commands every developer should know
+              • https://dev.to/dhruv/essential-git-commands-every-developer-should-know-2fl
+              • To learn more about Git, watch “The Git crash course for beginners, click below:
+              • https://www.youtube.com/watch?v=SWYqp7iY_Tc
+
+
+
